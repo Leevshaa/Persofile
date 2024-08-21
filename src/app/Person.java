@@ -2,6 +2,7 @@ package app;
 
 public class Person {
 
+    // Ініціалізації змінних для конструктора
     String name;
     int age;
     String profession;
@@ -13,7 +14,10 @@ public class Person {
         this.profession = profession;
     }
 
-    public switchProfession (String name, )
+    // Метод для зміни професії
+    public void switchProfession (Person person, String newProfession) {
+        person.setProfession(newProfession);
+    }
 
     //Getters для отримання даних
     public String getName() {
@@ -29,15 +33,6 @@ public class Person {
     }
 
     //Setters для зміни даних
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAge(int age) {
-        if (age >= 0) // Перевіряємо, щоб вік не був від'ємним числом
-            this.age = age;
-    }
-
     public void setProfession(String profession) {
         this.profession = profession;
     }
